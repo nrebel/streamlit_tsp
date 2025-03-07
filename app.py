@@ -134,7 +134,7 @@ st.write("Markiere Straßen auf der Karte und berechne die optimale Route.")
 map_ = create_map()
 map_data = st_folium(map_, width=700, height=500, key="map")
 
-selected_cities = st.multiselect("Wähle eine oder mehrere Städte:", list(german_cities), default="Ludwigshafen")
+selected_cities = st.multiselect("Wähle eine oder mehrere Städte (aktuell wird nur eine Stadt unterstützt!):", list(german_cities), default="Ludwigshafen")
 # Button zum Starten der Berechnung
 if st.button("Route berechnen"):
     #G = get_street_graph()
